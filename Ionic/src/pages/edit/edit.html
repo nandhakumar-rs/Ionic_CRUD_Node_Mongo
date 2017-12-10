@@ -1,0 +1,37 @@
+<!--
+  Generated template for the EditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>edit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item> 
+    <ion-label floating>
+   Title
+    </ion-label>
+    <ion-input type="text"  [(ngModel)]="title">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>
+     Content
+      </ion-label>
+      <ion-textarea type="text" [(ngModel)]="content" >
+      </ion-textarea>
+    </ion-item>
+    <button style="margin-top:10px" ion-button block color="success" outline (click)="save()">
+  Save
+    </button>
+    <button style="margin-top:10px" ion-button block color="danger" outline (click)="cancel()">
+      Close
+        </button>
+</ion-content>
